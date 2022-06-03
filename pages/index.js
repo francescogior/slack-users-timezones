@@ -17,7 +17,7 @@ function useFetchUsers() {
 }
 
 const Root = styled.div({
-  fontFamily: "sans-serif"
+  fontFamily: "sans-serif",
 });
 
 const Stack = styled.div(({ dir = "row", width, height, justify }) => ({
@@ -25,19 +25,20 @@ const Stack = styled.div(({ dir = "row", width, height, justify }) => ({
   flexDirection: dir,
   width,
   height,
-  justifyContent: justify
+  justifyContent: justify,
 }));
 
 const Spacer = styled.div(({ width, height, grow }) => ({
   width,
   height,
   flexShrink: 0,
-  flexGrow: grow ? 1 : "auto"
+  flexGrow: grow ? 1 : "auto",
 }));
 
 const LocalDateTime = styled.h2({
   fontSize: 18,
-  textAlign: "center"
+  textAlign: "center",
+  color: "#112233",
 });
 
 const USER_CARD_SIZE = 96;
@@ -52,21 +53,21 @@ const UserCard = styled.div(({ bg }) => ({
   boxShadow: "0 1px 10px rgba(33, 55 , 77, .5)",
   backgroundSize: "auto, cover",
   backgroundRepeat: "no-repeat, no-repeat",
-  backgroundPosition: "bottom center, center center"
+  backgroundPosition: "bottom center, center center",
 }));
 
 const UserName = styled.h2({
   color: "white",
   fontSize: 14,
   margin: 0,
-  textShadow: "0 0 1px black"
+  textShadow: "0 0 1px black",
 });
 
 const Status = styled.p({
   color: "white",
   fontSize: 12,
   margin: 0,
-  textShadow: "0 0 1px black"
+  textShadow: "0 0 1px black",
 });
 
 function useUtcTime() {
