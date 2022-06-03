@@ -36,7 +36,7 @@ const Spacer = styled.div(({ width, height, grow }) => ({
 }));
 
 const LocalDateTime = styled.h2({
-  fontSize: 18,
+  fontSize: 14,
   textAlign: "center",
   color: "#112233",
 });
